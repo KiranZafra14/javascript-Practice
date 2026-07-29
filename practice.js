@@ -95,3 +95,96 @@ for (k=1; k<i.length; k++){
 console.log(j);
 
 // 13
+let c=[9, 8, 7, 6, 5, 4], sum=0;
+for(i=0; i<c.length; i++){
+    sum= sum=c[i];
+}
+let avg= sum / c.length;
+console.log("Average is:", avg);
+
+// 14
+let d= [1, 2, 3, , 4, 5, 6, 7, 8, 9], odd=0, even=0;
+for(i=0; i<d.length; i++){
+    if(d[i]%2==0){
+        even++;
+    }
+    else{
+        odd++;
+    }
+}
+console.log("Even=", even);
+console.log("Odd=", odd);
+
+// 15
+let e=[5, 6, 7, 8, 9];
+for(i=e.length-1; i>=0; i--){
+console.log(e[i]);
+}
+
+// 16
+let f="abc", g="";
+for(i=f.length-1; i>=0; i--){
+g=g+f[i];
+}
+console.log(g);
+
+// 17
+let str = "Pakistan";
+let count = 0;
+for(let i=0;i<str.length;i++)
+{
+    let ch = str[i].toLowerCase();
+
+    if(ch=="a" || ch=="e" || ch=="i" || ch=="o" || ch=="u")
+    {
+        count++;
+    }
+}
+console.log("Vowels =", count);
+
+// 18
+let str = "Pakistan";
+let consonants = 0;
+for(let i=0;i<str.length;i++)
+{
+    let ch = str[i].toLowerCase();
+
+    if(ch>='a' && ch<='z')
+    {
+        if(ch!="a" && ch!="e" && ch!="i" && ch!="o" && ch!="u")
+        {
+            consonants++;
+        }
+    }
+}
+console.log("Consonants =", consonants);
+
+// 19
+let arr = [10,20,30,40];
+let x = 0;
+for(let i=0;i<arr.length;i++)
+{
+    x = x + arr[i];
+}
+console.log(x);
+
+// 20
+let arr = [1,2,3,2,4,1,5];
+let unique = [];
+for(let i=0; i<arr.length; i++)
+{
+    let found = false;
+    for(let j=0; j<unique.length; j++)
+    {
+        if(arr[i] == unique[j])
+        {
+            found = true;
+            break;
+        }
+    }
+    if(found == false)
+    {
+        unique[unique.length] = arr[i];
+    }
+}
+console.log(unique);
